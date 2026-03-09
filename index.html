@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feastio - Mediterranean Food, Universal Comfort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Info Bar -->
+  <div class="info-bar">
+    <div class="container">
+      Free Shipping on all orders above $50 | Gluten-free options available
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍽</span>
+        Feastio
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1920&q=80" alt="Mediterranean feast">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Sunny food.<br>Golden mood.</h1>
+        <p>Experience the vibrant flavors of the Mediterranean. Fresh ingredients, time-honored recipes, and a warm atmosphere await you.</p>
+        <div class="hero-buttons">
+          <a href="reservations.html" class="btn btn-primary">Make Reservation</a>
+          <a href="menu.html" class="btn btn-outline">View Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Food Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Explore the<br>Delicious Food</h2>
+      </div>
+      
+      <div class="category-pills" id="categoryPills">
+        <button class="category-pill active" data-category="all">All Recipes</button>
+        <button class="category-pill" data-category="neo">Neo Plates</button>
+        <button class="category-pill" data-category="soups">Soups & Stews</button>
+        <button class="category-pill" data-category="pastries">Pastries</button>
+        <button class="category-pill" data-category="meals">Meals</button>
+        <button class="category-pill" data-category="desserts">Desserts</button>
+        <button class="category-pill" data-category="drinks">Drinks</button>
+      </div>
+      
+      <div class="food-grid" id="foodGrid">
+        <div class="food-card" data-category="soups">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80" alt="Goat Stew">
+            <span class="food-card-badge">Popular</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Goat Stew</h3>
+            <div class="food-card-price">$29.00</div>
+            <p class="food-card-desc">Slow-cooked tender goat with aromatic herbs</p>
+          </div>
+        </div>
+        
+        <div class="food-card" data-category="neo">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80" alt="Riola Crisps">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Riola Crisps</h3>
+            <div class="food-card-price">$23.00</div>
+            <p class="food-card-desc">Crispy chickpea flour crackers with za'atar</p>
+          </div>
+        </div>
+        
+        <div class="food-card" data-category="soups">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80" alt="Ofada Stew">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Ofada Stew</h3>
+            <div class="food-card-price">$25.00</div>
+            <p class="food-card-desc">Spicy palm oil stew with assorted meats</p>
+          </div>
+        </div>
+        
+        <div class="food-card" data-category="meals">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&q=80" alt="Mediterranean Bowl">
+            <span class="food-card-badge">New</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Mediterranean Bowl</h3>
+            <div class="food-card-price">$32.00</div>
+            <p class="food-card-desc">Quinoa, falafel, hummus, and fresh veggies</p>
+          </div>
+        </div>
+        
+        <div class="food-card" data-category="pastries">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=600&q=80" alt="Spanakopita">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Spanakopita</h3>
+            <div class="food-card-price">$18.00</div>
+            <p class="food-card-desc">Flaky pastry filled with spinach and feta</p>
+          </div>
+        </div>
+        
+        <div class="food-card" data-category="desserts">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=600&q=80" alt="Tiramisu">
+            <span class="food-card-badge">Chef's Pick</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Classic Tiramisu</h3>
+            <div class="food-card-price">$14.00</div>
+            <p class="food-card-desc">Coffee-soaked ladyfingers with mascarpone</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center" style="margin-top: var(--space-xl);">
+        <a href="menu.html" class="btn btn-secondary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mediterranean Feature Section -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2>Mediterranean Food.<br>Universal Comfort.</h2>
+          <p>Our dishes draw from centuries of culinary tradition, bringing together the best flavors from across the Mediterranean region. Every plate tells a story of heritage, passion, and the simple joy of sharing good food.</p>
+          <a href="about.html" class="btn btn-primary">Our Story</a>
+        </div>
+        <div class="feature-image">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Mediterranean spread">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Benefits Section -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-image">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80" alt="Healthy Mediterranean bowl">
+        </div>
+        <div class="feature-content">
+          <h2 style="color: var(--color-primary);">The fiber-rich & protein-packed</h2>
+          <p>Our Mediterranean menu isn't just delicious—it's designed for your wellbeing. Rich in fiber, packed with protein, and full of probiotics, our dishes support your energy levels and digestive health.</p>
+          <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-lg);">
+            <span class="tag-badge">Low FODMAP</span>
+            <span class="tag-badge">No Refined Sugar</span>
+            <span class="tag-badge">Gluten Free Options</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="feature-section alt">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--space-xl);">
+        <h2 class="section-title">Experience luxury dining<br>and culinary artistry</h2>
+      </div>
+      <div class="food-grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));">
+        <div class="food-card">
+          <div class="food-card-image" style="aspect-ratio: 16/10;">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Fine dining">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Fine Dining Experience</h3>
+            <p class="food-card-desc">Impeccable service in an elegant atmosphere</p>
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="food-card-image" style="aspect-ratio: 16/10;">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Private events">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Private Events</h3>
+            <p class="food-card-desc">Celebrate special moments with us</p>
+          </div>
+        </div>
+        <div class="food-card">
+          <div class="food-card-image" style="aspect-ratio: 16/10;">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80" alt="Chef's table">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Chef's Table</h3>
+            <p class="food-card-desc">An intimate culinary journey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">What People are Saying</h2>
+      </div>
+      
+      <div class="food-grid" style="margin-top: var(--space-xl);">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The most authentic Mediterranean cuisine I've had outside of Greece. The goat stew is absolutely incredible—tender, flavorful, and perfectly seasoned."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah M." class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Sarah Mitchell</div>
+              <div class="testimonial-role">Food Critic</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Feastio has become our family's favorite spot. The atmosphere is warm, the staff is welcoming, and every dish exceeds expectations."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James K." class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">James Kennedy</div>
+              <div class="testimonial-role">Regular Customer</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Finally, a restaurant that understands dietary needs! Their low-FODMAP options are delicious and thoughtfully prepared. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Emma L." class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Emma Lawson</div>
+              <div class="testimonial-role">Health Coach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <span class="logo-icon">🍽</span>
+            Feastio
+          </a>
+          <p>Bringing the warmth and flavors of the Mediterranean to your table. Every dish is a celebration of tradition, freshness, and joy.</p>
+          <div class="social-links" style="margin-top: var(--space-md);">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+            <li><a href="mailto:hello@feastio.com">hello@feastio.com</a></li>
+            <li>123 Mediterranean Ave</li>
+            <li>San Francisco, CA 94102</li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon - Thu: 11am - 10pm</li>
+            <li>Fri - Sat: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Happy Hour: 4pm - 7pm</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Feastio. All rights reserved.</p>
+        <div style="display: flex; gap: var(--space-md);">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - Feastio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Info Bar -->
+  <div class="info-bar">
+    <div class="container">
+      Free Shipping on all orders above $50 | Gluten-free options available
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍽</span>
+        Feastio
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservations.html" class="active">Reservations</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 40vh;">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Reservations header">
+    </div>
+    <div class="container">
+      <div class="hero-content text-center" style="max-width: 800px; margin: 0 auto;">
+        <h1>Reservations</h1>
+        <p>Book your table and prepare for an unforgettable Mediterranean dining experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-grid" style="align-items: flex-start;">
+        <!-- Form -->
+        <div>
+          <h2 class="section-title" style="margin-bottom: var(--space-lg);">Book Your Table</h2>
+          
+          <form id="reservationForm" class="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input type="text" id="firstName" class="form-input" required placeholder="Enter your first name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name *</label>
+                <input type="text" id="lastName" class="form-input" required placeholder="Enter your last name">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input type="email" id="email" class="form-input" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone *</label>
+                <input type="tel" id="phone" class="form-input" required placeholder="(123) 456-7890">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="date">Date *</label>
+                <input type="date" id="date" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="time">Time *</label>
+                <select id="time" class="form-select" required>
+                  <option value="">Select a time</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="11:30">11:30 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="guests">Number of Guests *</label>
+                <select id="guests" class="form-select" required>
+                  <option value="">Select guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8+ Guests</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="occasion">Occasion</label>
+                <select id="occasion" class="form-select">
+                  <option value="">Select occasion (optional)</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="date">Date Night</option>
+                  <option value="business">Business Meeting</option>
+                  <option value="family">Family Gathering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="seating">Seating Preference</label>
+              <select id="seating" class="form-select">
+                <option value="">No preference</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor Patio</option>
+                <option value="bar">Bar Area</option>
+                <option value="private">Private Room</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="dietary">Dietary Restrictions / Special Requests</label>
+              <textarea id="dietary" class="form-textarea" placeholder="Please let us know about any allergies, dietary restrictions, or special requests..."></textarea>
+            </div>
+            
+            <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <input type="checkbox" id="newsletter" style="margin-top: 0.25rem; width: 18px; height: 18px;">
+              <label for="newsletter" style="font-size: 0.9rem; color: var(--color-text-light);">
+                Sign me up for exclusive offers, new menu updates, and special events
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-md);">
+              Confirm Reservation
+            </button>
+          </form>
+        </div>
+        
+        <!-- Info Side -->
+        <div>
+          <div class="testimonial-card" style="margin-bottom: var(--space-lg);">
+            <h3 style="margin-bottom: var(--space-md); color: var(--color-primary);">Reservation Policy</h3>
+            <ul style="list-style: disc; padding-left: var(--space-md); color: var(--color-text-light);">
+              <li style="margin-bottom: 0.5rem;">Reservations can be made up to 60 days in advance</li>
+              <li style="margin-bottom: 0.5rem;">Please arrive within 15 minutes of your reservation time</li>
+              <li style="margin-bottom: 0.5rem;">For parties of 8 or more, please call us directly</li>
+              <li style="margin-bottom: 0.5rem;">A confirmation email will be sent upon booking</li>
+              <li>Cancellations can be made online or by phone up to 2 hours before</li>
+            </ul>
+          </div>
+          
+          <div class="testimonial-card" style="margin-bottom: var(--space-lg);">
+            <h3 style="margin-bottom: var(--space-md); color: var(--color-primary);">Private Events</h3>
+            <p style="color: var(--color-text-light); margin-bottom: var(--space-md);">
+              Planning a special celebration? We offer private dining rooms for groups of 10-50 guests. Our events team will help you create a custom menu and memorable experience.
+            </p>
+            <a href="mailto:events@feastio.com" class="btn btn-secondary btn-sm">Inquire About Private Events</a>
+          </div>
+          
+          <div class="testimonial-card">
+            <h3 style="margin-bottom: var(--space-md); color: var(--color-primary);">Contact Information</h3>
+            <p style="margin-bottom: 0.5rem;"><strong>📞 Phone:</strong> (123) 456-7890</p>
+            <p style="margin-bottom: 0.5rem;"><strong>✉️ Email:</strong> reservations@feastio.com</p>
+            <p><strong>📍 Address:</strong><br>123 Mediterranean Ave<br>San Francisco, CA 94102</p>
+            
+            <div style="margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid #eee;">
+              <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Hours</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-light);">
+                Mon - Thu: 11am - 10pm<br>
+                Fri - Sat: 11am - 11pm<br>
+                Sunday: 10am - 9pm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div id="successModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2000; align-items: center; justify-content: center;">
+    <div style="background: white; padding: var(--space-xl); border-radius: var(--radius-lg); max-width: 500px; width: 90%; text-align: center;">
+      <div style="font-size: 4rem; margin-bottom: var(--space-md);">✅</div>
+      <h2 style="color: var(--color-primary); margin-bottom: var(--space-sm);">Reservation Confirmed!</h2>
+      <p style="color: var(--color-text-light); margin-bottom: var(--space-lg);">
+        Thank you for choosing Feastio. We've sent a confirmation email with your reservation details. We look forward to welcoming you!
+      </p>
+      <button onclick="closeModal()" class="btn btn-primary">Got it!</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <span class="logo-icon">🍽</span>
+            Feastio
+          </a>
+          <p>Bringing the warmth and flavors of the Mediterranean to your table. Every dish is a celebration of tradition, freshness, and joy.</p>
+          <div class="social-links" style="margin-top: var(--space-md);">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+            <li><a href="mailto:hello@feastio.com">hello@feastio.com</a></li>
+            <li>123 Mediterranean Ave</li>
+            <li>San Francisco, CA 94102</li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon - Thu: 11am - 10pm</li>
+            <li>Fri - Sat: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Happy Hour: 4pm - 7pm</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Feastio. All rights reserved.</p>
+        <div style="display: flex; gap: var(--space-md);">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Set minimum date to today
+    const dateInput = document.getElementById('date');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+    
+    // Form submission
+    document.getElementById('reservationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('successModal').style.display = 'flex';
+      this.reset();
+    });
+    
+    function closeModal() {
+      document.getElementById('successModal').style.display = 'none';
+    }
+    
+    // Close modal on outside click
+    document.getElementById('successModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

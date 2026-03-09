@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Feastio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Info Bar -->
+  <div class="info-bar">
+    <div class="container">
+      Free Shipping on all orders above $50 | Gluten-free options available
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍽</span>
+        Feastio
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1920&q=80" alt="Menu header">
+    </div>
+    <div class="container">
+      <div class="hero-content text-center" style="max-width: 800px; margin: 0 auto;">
+        <h1>Our Menu</h1>
+        <p>Discover a culinary journey through the Mediterranean. Every dish is crafted with love, using the freshest ingredients and traditional recipes passed down through generations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Navigation -->
+  <section class="section-sm" style="background: var(--color-cream-dark);">
+    <div class="container">
+      <div class="category-pills" id="menuNav">
+        <a href="#starters" class="category-pill">Starters</a>
+        <a href="#mains" class="category-pill">Main Courses</a>
+        <a href="#soups" class="category-pill">Soups & Stews</a>
+        <a href="#desserts" class="category-pill">Desserts</a>
+        <a href="#drinks" class="category-pill">Drinks</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Starters -->
+  <section id="starters" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Starters & Small Plates</h2>
+      
+      <div class="food-grid">
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80" alt="Hummus Trio">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Hummus Trio</h3>
+            <div class="food-card-price">$16.00</div>
+            <p class="food-card-desc">Classic, roasted red pepper, and pesto hummus with warm pita</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=600&q=80" alt="Falafel">
+            <span class="food-card-badge">Vegan</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Crispy Falafel</h3>
+            <div class="food-card-price">$14.00</div>
+            <p class="food-card-desc">House-made falafel with tahini sauce and pickles</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=600&q=80" alt="Spanakopita">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Spanakopita</h3>
+            <div class="food-card-price">$18.00</div>
+            <p class="food-card-desc">Flaky phyllo pastry with spinach, feta, and herbs</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=600&q=80" alt="Dolmas">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Dolmas</h3>
+            <div class="food-card-price">$15.00</div>
+            <p class="food-card-desc">Stuffed grape leaves with rice, pine nuts, and herbs</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&q=80" alt="Baba Ganoush">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Baba Ganoush</h3>
+            <div class="food-card-price">$13.00</div>
+            <p class="food-card-desc">Smoky eggplant dip with garlic, tahini, and olive oil</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1561651823-34a0658ebc9d?w=600&q=80" alt="Grilled Octopus">
+            <span class="food-card-badge">Chef's Pick</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Grilled Octopus</h3>
+            <div class="food-card-price">$26.00</div>
+            <p class="food-card-desc">Charred octopus with lemon, oregano, and olive oil</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Courses -->
+  <section id="mains" class="section" style="background: var(--color-cream-dark);">
+    <div class="container">
+      <h2 class="section-title text-center">Main Courses</h2>
+      
+      <div class="food-grid">
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Lamb Chops">
+            <span class="food-card-badge">Popular</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Grilled Lamb Chops</h3>
+            <div class="food-card-price">$42.00</div>
+            <p class="food-card-desc">Marinated lamb with rosemary, garlic, and roasted vegetables</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80" alt="Seafood Paella">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Seafood Paella</h3>
+            <div class="food-card-price">$38.00</div>
+            <p class="food-card-desc">Saffron rice with shrimp, mussels, calamari, and fish</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80" alt="Chicken Souvlaki">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Chicken Souvlaki</h3>
+            <div class="food-card-price">$28.00</div>
+            <p class="food-card-desc">Grilled chicken skewers with tzatziki and pita</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&q=80" alt="Moussaka">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Moussaka</h3>
+            <div class="food-card-price">$32.00</div>
+            <p class="food-card-desc">Layers of eggplant, ground lamb, and béchamel sauce</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Mediterranean Bowl">
+            <span class="food-card-badge">Vegan</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Mediterranean Bowl</h3>
+            <div class="food-card-price">$24.00</div>
+            <p class="food-card-desc">Quinoa, chickpeas, falafel, hummus, and fresh vegetables</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600&q=80" alt="Grilled Sea Bass">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Grilled Sea Bass</h3>
+            <div class="food-card-price">$36.00</div>
+            <p class="food-card-desc">Whole grilled sea bass with lemon, capers, and herbs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soups & Stews -->
+  <section id="soups" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Soups & Stews</h2>
+      
+      <div class="food-grid">
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80" alt="Goat Stew">
+            <span class="food-card-badge">Signature</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Goat Stew</h3>
+            <div class="food-card-price">$29.00</div>
+            <p class="food-card-desc">Slow-cooked tender goat with aromatic herbs and spices</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80" alt="Ofada Stew">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Ofada Stew</h3>
+            <div class="food-card-price">$25.00</div>
+            <p class="food-card-desc">Spicy palm oil stew with assorted meats and native rice</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1603105039889-98338840d0d6?w=600&q=80" alt="Lentil Soup">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Mediterranean Lentil Soup</h3>
+            <div class="food-card-price">$14.00</div>
+            <p class="food-card-desc">Hearty lentils with vegetables, cumin, and lemon</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Chicken Tagine">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Chicken Tagine</h3>
+            <div class="food-card-price">$27.00</div>
+            <p class="food-card-desc">Braised chicken with preserved lemons, olives, and spices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desserts -->
+  <section id="desserts" class="section" style="background: var(--color-cream-dark);">
+    <div class="container">
+      <h2 class="section-title text-center">Desserts</h2>
+      
+      <div class="food-grid">
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?w=600&q=80" alt="Tiramisu">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Classic Tiramisu</h3>
+            <div class="food-card-price">$14.00</div>
+            <p class="food-card-desc">Coffee-soaked ladyfingers with mascarpone and cocoa</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&q=80" alt="Baklava">
+            <span class="food-card-badge">Popular</span>
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Pistachio Baklava</h3>
+            <div class="food-card-price">$12.00</div>
+            <p class="food-card-desc">Layered phyllo pastry with pistachios and honey syrup</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Chocolate Cake">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Flourless Chocolate Cake</h3>
+            <div class="food-card-price">$16.00</div>
+            <p class="food-card-desc">Rich chocolate cake with raspberry coulis (gluten-free)</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1579306194872-64d3b7bac4c2?w=600&q=80" alt="Greek Yogurt">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Greek Yogurt Parfait</h3>
+            <div class="food-card-price">$11.00</div>
+            <p class="food-card-desc">Thick yogurt with honey, walnuts, and fresh fruit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drinks -->
+  <section id="drinks" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Drinks & Beverages</h2>
+      
+      <div class="food-grid">
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80" alt="Turkish Coffee">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Turkish Coffee</h3>
+            <div class="food-card-price">$6.00</div>
+            <p class="food-card-desc">Traditional brewed coffee with cardamom</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" alt="Sangria">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Mediterranean Sangria</h3>
+            <div class="food-card-price">$14.00</div>
+            <p class="food-card-desc">Red wine with fresh fruits and brandy</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80" alt="Mint Tea">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">Moroccan Mint Tea</h3>
+            <div class="food-card-price">$5.00</div>
+            <p class="food-card-desc">Green tea with fresh mint and sugar</p>
+          </div>
+        </div>
+        
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=600&q=80" alt="Wine Selection">
+          </div>
+          <div class="food-card-content">
+            <h3 class="food-card-title">House Wine Selection</h3>
+            <div class="food-card-price">$12.00/glass</div>
+            <p class="food-card-desc">Curated Mediterranean wines by the glass</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="text-center">
+        <h2 style="margin-bottom: var(--space-md);">Ready to Taste the Mediterranean?</h2>
+        <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: var(--space-lg);">Book your table today and experience our culinary journey</p>
+        <a href="reservations.html" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Make a Reservation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <span class="logo-icon">🍽</span>
+            Feastio
+          </a>
+          <p>Bringing the warmth and flavors of the Mediterranean to your table. Every dish is a celebration of tradition, freshness, and joy.</p>
+          <div class="social-links" style="margin-top: var(--space-md);">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+            <li><a href="mailto:hello@feastio.com">hello@feastio.com</a></li>
+            <li>123 Mediterranean Ave</li>
+            <li>San Francisco, CA 94102</li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon - Thu: 11am - 10pm</li>
+            <li>Fri - Sat: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Happy Hour: 4pm - 7pm</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Feastio. All rights reserved.</p>
+        <div style="display: flex; gap: var(--space-md);">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

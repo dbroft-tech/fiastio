@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Feastio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Info Bar -->
+  <div class="info-bar">
+    <div class="container">
+      Free Shipping on all orders above $50 | Gluten-free options available
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍽</span>
+        Feastio
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920&q=80" alt="About header">
+    </div>
+    <div class="container">
+      <div class="hero-content text-center" style="max-width: 800px; margin: 0 auto;">
+        <h1>Our Story</h1>
+        <p>A journey of passion, tradition, and the love of bringing people together through exceptional food.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2 class="section-title">From Family Kitchen to Your Table</h2>
+          <p>Feastio was born from a simple dream: to share the authentic flavors of Mediterranean home cooking with the world. Our founder, Chef Maria Kostas, grew up in a small village on the coast of Greece, where every meal was a celebration of fresh ingredients and time-honored recipes.</p>
+          <p>In 2015, Maria brought her family's recipes to San Francisco, determined to create a space where guests could experience the warmth and joy of a Mediterranean family gathering. What started as a humble corner restaurant has grown into a beloved destination for food lovers seeking authentic, healthful cuisine.</p>
+          <p>Today, Feastio remains true to its roots. We source the finest ingredients, many imported directly from the Mediterranean, and prepare each dish with the same love and care that Maria learned in her grandmother's kitchen.</p>
+        </div>
+        <div class="feature-image">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80" alt="Chef cooking">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section" style="background: var(--color-cream-dark);">
+    <div class="container">
+      <h2 class="section-title text-center">Our Values</h2>
+      
+      <div class="food-grid" style="margin-top: var(--space-xl);">
+        <div class="testimonial-card" style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-sm);">🌿</div>
+          <h3 style="margin-bottom: var(--space-sm);">Fresh Ingredients</h3>
+          <p style="color: var(--color-text-light);">We source organic, locally-grown produce and import specialty ingredients directly from the Mediterranean region.</p>
+        </div>
+        
+        <div class="testimonial-card" style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-sm);">👨‍🍳</div>
+          <h3 style="margin-bottom: var(--space-sm);">Authentic Recipes</h3>
+          <p style="color: var(--color-text-light);">Every dish follows traditional methods passed down through generations, ensuring genuine Mediterranean flavors.</p>
+        </div>
+        
+        <div class="testimonial-card" style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-sm);">❤️</div>
+          <h3 style="margin-bottom: var(--space-sm);">Made with Love</h3>
+          <p style="color: var(--color-text-light);">Food is our love language. Each plate is prepared with care, attention, and genuine hospitality.</p>
+        </div>
+        
+        <div class="testimonial-card" style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-sm);">🌱</div>
+          <h3 style="margin-bottom: var(--space-sm);">Sustainable</h3>
+          <p style="color: var(--color-text-light);">We're committed to eco-friendly practices, from sustainable sourcing to minimizing food waste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Meet Our Team</h2>
+      
+      <div class="food-grid" style="margin-top: var(--space-xl); grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+        <div class="testimonial-card" style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1583394293214-28ez8f7f5cb4?w=400&q=80" alt="Maria Kostas" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto var(--space-md);">
+          <h3>Maria Kostas</h3>
+          <p style="color: var(--color-primary); font-weight: 500;">Founder & Executive Chef</p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: var(--space-sm);">A third-generation chef from Greece, Maria brings authentic Mediterranean traditions to every dish.</p>
+        </div>
+        
+        <div class="testimonial-card" style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80" alt="David Chen" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto var(--space-md);">
+          <h3>David Chen</h3>
+          <p style="color: var(--color-primary); font-weight: 500;">Head Chef</p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: var(--space-sm);">David trained in Michelin-starred restaurants across Europe before joining Feastio in 2018.</p>
+        </div>
+        
+        <div class="testimonial-card" style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=400&q=80" alt="Sofia Martinez" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto var(--space-md);">
+          <h3>Sofia Martinez</h3>
+          <p style="color: var(--color-primary); font-weight: 500;">Pastry Chef</p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: var(--space-sm);">Sofia creates our signature desserts, blending traditional techniques with modern creativity.</p>
+        </div>
+        
+        <div class="testimonial-card" style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="James Wilson" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto var(--space-md);">
+          <h3>James Wilson</h3>
+          <p style="color: var(--color-primary); font-weight: 500;">General Manager</p>
+          <p style="color: var(--color-text-light); font-size: 0.9rem; margin-top: var(--space-sm);">James ensures every guest receives warm, attentive service and an unforgettable dining experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section class="section" style="background: var(--color-cream-dark);">
+    <div class="container">
+      <h2 class="section-title text-center">Recognition</h2>
+      
+      <div class="food-grid" style="margin-top: var(--space-xl); grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="text-center">
+          <div style="font-size: 4rem; color: var(--color-accent); margin-bottom: var(--space-sm);">🏆</div>
+          <h3 style="font-size: 1.25rem;">Michelin Guide</h3>
+          <p style="color: var(--color-text-light);">Bib Gourmand 2022-2025</p>
+        </div>
+        
+        <div class="text-center">
+          <div style="font-size: 4rem; color: var(--color-accent); margin-bottom: var(--space-sm);">⭐</div>
+          <h3 style="font-size: 1.25rem;">James Beard Award</h3>
+          <p style="color: var(--color-text-light);">Best New Restaurant 2016</p>
+        </div>
+        
+        <div class="text-center">
+          <div style="font-size: 4rem; color: var(--color-accent); margin-bottom: var(--space-sm);">📰</div>
+          <h3 style="font-size: 1.25rem;">SF Chronicle</h3>
+          <p style="color: var(--color-text-light);">Top 100 Restaurants</p>
+        </div>
+        
+        <div class="text-center">
+          <div style="font-size: 4rem; color: var(--color-accent); margin-bottom: var(--space-sm);">🌿</div>
+          <h3 style="font-size: 1.25rem;">Green Restaurant</h3>
+          <p style="color: var(--color-text-light);">Certified Sustainable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Section -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-content">
+          <h2>Visit Us</h2>
+          <p>We'd love to welcome you to Feastio. Whether you're celebrating a special occasion, enjoying a casual dinner, or simply craving authentic Mediterranean flavors, we're here to make your experience memorable.</p>
+          <div style="margin-top: var(--space-lg);">
+            <p><strong>📍 Address:</strong><br>123 Mediterranean Ave<br>San Francisco, CA 94102</p>
+            <p style="margin-top: var(--space-md);"><strong>📞 Phone:</strong><br>(123) 456-7890</p>
+            <p style="margin-top: var(--space-md);"><strong>✉️ Email:</strong><br>hello@feastio.com</p>
+          </div>
+          <a href="reservations.html" class="btn btn-primary" style="margin-top: var(--space-lg);">Make a Reservation</a>
+        </div>
+        <div class="feature-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Restaurant interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <span class="logo-icon">🍽</span>
+            Feastio
+          </a>
+          <p>Bringing the warmth and flavors of the Mediterranean to your table. Every dish is a celebration of tradition, freshness, and joy.</p>
+          <div class="social-links" style="margin-top: var(--space-md);">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+            <li><a href="mailto:hello@feastio.com">hello@feastio.com</a></li>
+            <li>123 Mediterranean Ave</li>
+            <li>San Francisco, CA 94102</li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon - Thu: 11am - 10pm</li>
+            <li>Fri - Sat: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Happy Hour: 4pm - 7pm</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Feastio. All rights reserved.</p>
+        <div style="display: flex; gap: var(--space-md);">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
